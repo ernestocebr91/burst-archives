@@ -1,0 +1,806 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #efe6d7;
+}
+
+section {
+    border-bottom: 2px solid rgba(238, 176, 104, 0.5);
+}
+
+img {
+    border: 5px solid rgba(238, 176, 104, 0.5);
+    width: 8%;
+    margin-bottom: .2em;
+}
+
+#publicidad, #discografia {
+    background-color: black;
+}
+
+#publicidad a, #discografia a {
+    width: 100%;
+    margin-bottom: 0em;
+}
+
+#publicidad img, #discografia img {
+    border: 0px solid transparent;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0em;
+}
+
+i {
+    color: #eeb068;
+}
+
+.texto {
+    background-color: #232323d5;
+    border: 3px solid #6c757536;
+    text-align: justify;
+}
+
+.ink {
+    font-family: 'Yellowtail', cursive;    
+}
+
+.ink span {
+    color: #daa26e;    
+}
+
+.card {
+    background-color: #171717;
+    border: 3px solid #6c757536;
+}
+
+.ink span {
+    transition: 1s ease-in;    
+}
+
+.ink span:hover {
+    color: #904306;
+    transition: 1s ease-in;
+}
+
+/* ----- Header ----- */
+header #top {
+    background-color: #232323;
+    font-size: .8em;
+    color: #efe6d7;
+}
+
+header #top i {
+    color: #daa26e;    
+}
+
+header img {
+    border: none;
+}
+
+span a {
+    text-decoration: none;
+}
+
+/* ----- Navegación ----- */
+#menuNavegacion, #menuUsuario, .dropdown-menu {
+    background-color: #232323;
+    font-size: .8em;
+    display: none;
+}
+
+#menuNavegacion a, #menuUsuario a, .dropdown-item {
+    color: #daa26e;
+    transition: .3s ease-in;
+}
+
+#menuNavegacion a:hover, #menuUsuario a:hover, .dropdown-item:hover  {
+    color: #efe6d7;
+    background-color: #232323;
+    transition: .3s ease-in;
+}
+
+#menuNavegacion img, #menuUsuario img {
+    width: 12%;
+    border-radius: 50%;
+    border: 2px solid rgba(238, 176, 104, 0.5);
+}
+
+/* ----- Inicio ----- */
+#inicio {
+    background-image: url(img/fondo.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #efe6d7;
+}
+
+#logo h2 {
+    font-size: 7em;
+}
+
+#logo h2 span {
+    margin-right: .4em;
+}
+
+#logo h3 {
+    font-size: 1.5em;
+    margin-right: .5em;
+}
+
+.logo {
+    font-family: 'Yellowtail', cursive;
+    color: #efe6d7;
+}
+
+.logo img {
+    width: 100%;
+}
+
+#logoFirma {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 2px solid rgba(238, 176, 104, 0.5);
+}
+
+#logo .btns {
+    font-family: 'Nunito', sans-serif;
+}
+
+.btns a, input[type="submit"] {
+    padding: .8em;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    border: 3px solid #daa26e;
+    border-radius: 15px;
+    transition: .3s ease-in;
+    font-size: 1em;
+    margin: 0 .1em;
+}
+
+.btns a:hover, input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #daa26e;
+    transition: .3s ease-in;
+}
+
+#registrar {
+    padding: .8em;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    border: 3px solid #66DE93;
+    border-radius: 15px;
+    transition: .3s ease-in;
+    font-size: 1em;
+    margin: 0 .1em;
+}
+
+#registrar:hover {
+    cursor: pointer;
+    color: #232323;
+    background-color: #66DE93;
+    transition: .3s ease-in;
+}
+
+#editar {
+    padding: .8em;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    border: 3px solid #FFDF6B;
+    border-radius: 15px;
+    transition: .3s ease-in;
+    font-size: 1em;
+    margin: 0 .1em;
+}
+
+#editar:hover {
+    cursor: pointer;
+    color: #232323;
+    background-color: #FFDF6B;
+    transition: .3s ease-in;
+}
+
+#borrar {
+    padding: .8em;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    border: 3px solid #D83A56;
+    border-radius: 15px;
+    transition: .3s ease-in;
+    font-size: 1em;
+    margin: 0 .1em;
+}
+
+#borrar:hover {
+    cursor: pointer;
+    background-color: #D83A56;
+    transition: .3s ease-in;
+}
+
+#redesSociales div {
+    background-color: #232323;
+    border-radius: 15px;
+    margin-right: 1em;
+}
+
+#redesSociales a {
+    transition: .3s ease-in;
+    font-size: .7em;
+}
+
+#redesSociales a i {
+    font-size: 3em;
+    color: #daa26e;
+    transition: .3s ease-in;
+}
+
+#redesSociales a i:hover {
+    cursor: pointer;
+    transition: .3s ease-in;
+    color: #efe6d7;
+}
+
+#flecha {
+    display: none;
+    text-decoration: none;
+}
+
+#flecha i {
+    font-size: 2.5em;
+    color: #daa26e;
+    transition: .3s ease-in;
+}
+
+#flecha i:hover {
+    cursor: pointer;
+    transition: .3s ease-in;
+    color: #efe6d7;
+}
+
+#logo {
+    margin-top: 5em;
+}
+
+#botones {
+    display: flex;
+}
+
+.btns .container {
+    margin-left: 15em;
+}
+
+h5 {
+    margin-top: 2.5em;
+}
+
+/* ----- Sobre nosotros ----- */
+#sobreNosotros {
+    background-image: url("img/fondo2.jpg");
+    background-color: rgba(21, 36, 38, 1);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ----- Nuestros especialistas ----- */
+#nuestrosEspecialistas {
+    background-color: #152426;
+    background-image: url("img/oldcases2.jpg");
+    background-color: rgba(21, 36, 38, 1);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ----- Información detallada ----- */
+#informacionDetallada {
+    background-color: #152426;
+    background-image: url("img/thebeastwallpaper.jpg");
+    background-color: rgba(21, 36, 38, 1);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ----- Bursts históricas ----- */
+#burstsHistoricas {
+    background-image: url("img/fondo55.jpg");
+    background-color: rgba(21, 36, 38, 1);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#burstsHistoricas .row .container {
+    transition: .3s ease-in;
+}
+
+#burstsHistoricas .row .container:hover {
+    cursor: pointer;
+    scale: 1.05;
+    transition: .3s ease-in;
+}
+
+#burstsHistoricas img, #burstAleatoria .bg-white img {
+    border: 1px solid transparent;
+}
+
+/* ----- Bursts históricas ----- */
+#burst {
+    background-image: url("img/fondo55.jpg");
+    background-color: rgba(21, 36, 38, 1);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ----- Burst aleatoria ----- */
+#burstAleatoria {
+    background-color: #152426;
+    background-image: url("img/burst5.png");
+    background-color: rgba(21, 36, 38, 1);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ----- Blog ----- */
+#blog {
+    background-color: #152426;
+    background-image: url("img/oldcases2.jpg");
+    background-color: rgba(21, 36, 38, 1);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ----- Ventajas usuario registrado ----- */
+#usuarioRegistrado {
+    background-color: #152426;
+    background-image: url("img/burstmarshall.jpg");
+    background-color: rgba(21, 36, 38, 1);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ----- Opiniones célebres ----- */
+#opinionesCelebres {
+    background-color: #152426;
+    background-image: url("img/guitar.jpg");
+    background-color: rgba(21, 36, 38, 1);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ----- Contacto ----- */
+#contacto {
+    background-image: url("img/burst6.jpg");
+    background-color: rgba(21, 36, 38, 1);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ----- Redes sociales ----- */
+#redesSocialesGrande {
+    background-color: #152426;
+    background-image: url("img/lotofguitars.jpg");
+    background-color: rgba(21, 36, 38, 1);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ----- Sobre nosotros ----- */
+#perfilUsuario {
+    background-image: url("img/fondo2.jpg");
+    background-color: rgba(21, 36, 38, 1);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ----- Sobre nosotros ----- */
+#administracion {
+    background-image: url("img/fondo2.jpg");
+    background-color: rgba(21, 36, 38, 1);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#administracion a, #perfilUsuario a {
+    text-decoration: none;
+    color: #efe6d7;
+}
+
+.cardSocial {
+    transition: .3s ease-in;
+}
+
+.cardSocial:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: .3s ease-in;
+    color: #efe6d7;
+}
+
+.enlaceSocial {
+    text-decoration: none;
+    color: #efe6d7;
+}
+
+.btns .container {
+    padding: 1rem;
+}
+
+#blog img {
+    width: 25%;
+}
+
+#cambiarImagen {
+    margin-top: 3em;
+}
+
+#publicidad a, #discografia a {
+    overflow: hidden;
+}
+
+#publicidad img, #discografia img {
+    transition: transform 1s ease;
+}
+
+#publicidad a:hover img, #discografia a:hover img {
+    transform: scale(1.3);
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.fadeIn {
+    animation: fadeIn .5s;
+    -webkit-animation: fadeIn .5s;
+    -moz-animation: fadeIn .5s;
+    -o-animation: fadeIn .5s;
+    -ms-animation: fadeIn .5s;
+    transition: .5s ease-in;
+}
+
+.fadeOut {
+    animation: fadeOut .5s;
+    -webkit-animation: fadeOut .5s;
+    -moz-animation: fadeOut .5s;
+    -o-animation: fadeOut .5s;
+    -ms-animation: fadeOut .5s;
+    transition: .5s ease-in;
+}
+
+form {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+#ventanaModal {
+    background-color: #232323;
+    color: #efe6d7;
+    border: 2px solid rgba(238, 176, 104, 0.5);
+}
+
+#registrate {
+    background-color: #eeb068;
+    color: #232323;
+}
+
+#tituloContacto, #subtituloContacto {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+#discografia {
+    width: 100%;
+    border: 2px solid rgba(238, 176, 104, 0.5);
+    line-height: 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;;
+}
+
+#discografia img {
+    border: 0px solid transparent;
+    width: 100% !important;
+    height: 100% !important;
+    margin-bottom: 0em;
+    transition: transform 1s ease;
+}
+
+#imagenPrincipal {
+    border: 0px solid transparent;
+}
+
+iframe {
+    border: 2px solid rgba(238, 176, 104, 0.5);
+    height: 53vh;
+}
+
+.valor span {
+    width: 120px;
+    height: 120px;
+}
+
+#fichaInstrumento img:hover {
+    cursor: pointer;
+}
+
+.owners img {
+    width: 120px;
+    height: 120px;
+}
+
+th {
+    background-color: black;
+}
+
+th, td {
+    padding: 1em 2em;
+}
+
+td img {
+    border: 3px solid rgba(238, 176, 104, 0.5);
+}
+
+/* ----- Footer ----- */
+footer {
+    background-color: #232323;
+    font-size: .8em;
+}
+
+footer {
+    font-size: .8em;
+    line-height: .7em;
+}
+
+footer a {
+    color: #daa26e;
+    transition: 1s ease-in;
+}
+
+footer a:hover {
+    color: #904306;
+    transition: 1s ease-in;
+}
+
+/* ----- Media-queries ----- */
+@media (max-width: 1024px) {
+    #logo {
+        margin-right: 0em;
+    }
+    #logo h2 {
+        font-size: 7em;
+        margin-left: 4.5em;
+    }
+    #logo h2 span {
+        margin-right: 0em;
+    }
+    #logo h3 {
+        font-size: 1.3em;
+        margin-left: 14em;
+        margin-bottom: 1.5em;
+    }
+    .card i {
+        font-size: 4.5em;
+    }
+    #redesSociales {
+        margin-right: 11em;
+    }
+    .btns .container {
+        margin-left: 30em;
+        width: 50%;
+    }
+    #blog img {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    #blog img:nth-child(even) {
+        margin-top: 2em;
+    }
+    #cambiarImagen {
+        margin-top: 0em;
+    }
+} 
+
+@media (max-width: 800px) {
+    #logo {
+        margin-right: 0em;
+    }
+    #logo h2 {
+        font-size: 7em;
+        margin-left: 2.9em;
+    }
+    #logo h2 span {
+        margin-right: 0em;
+    }
+    #logo h3 {
+        font-size: 1.6em;
+        margin-left: 13em;
+        margin-bottom: 1.5em;
+    }
+    .card i {
+        font-size: 4.5em;
+    }
+    #redesSociales {
+        margin-right: 7em;
+    }
+    .btns .container {
+        margin-left: 26em;
+        width: 50%;
+        font-size: .8em;
+    }
+    #blog img {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    #blog img:nth-child(even) {
+        margin-top: 2em;
+    }
+    #cambiarImagen {
+        margin-top: 0em;
+    }
+} 
+
+@media (max-width: 400px) {
+    #logo {
+        margin-right: 0em;
+    }
+    #logo h2 {
+        font-size: 4.5em;
+        margin-left: 1.7em;
+    }
+    #logo h2 span {
+        margin-right: 0em;
+    }
+    #logo h3 {
+        font-size: 1.2em;
+        margin-left: 6em;
+        margin-bottom: .75em;
+    }
+    .card i {
+        font-size: 2.25em;
+    }
+    #redesSociales div {
+        display: none;
+    }
+    .btns .container {
+        width: 100%;
+        margin-left: 7em;
+    }
+    .btn:first-of-type {
+        margin-bottom: .5em;
+    }
+    header #top {
+        font-size: .6em;
+    }
+    #logoFirma {
+        width: 80px;
+        height: 80px;
+    }
+    nav .container div:first-of-type {
+        display: inline;
+        width: 50%;
+    }
+    h5 {
+        margin-top: 1em;
+    }
+    #burstAleatoria p, #blog {
+        font-size: .8em;
+    }
+    .card i {
+        font-size: 4.5em;
+    }
+    #botones {
+        display: block;
+    }
+    form {
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
+    form .form-control {
+        font-size: .5rem;
+    }
+    #perfilUsuario a, #perfilUsuario p {
+        font-size: .6em;
+    }
+    #tituloContacto, #subtituloContacto {
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
+} 
+
+@media (max-height: 400px) {
+    #logo {
+        margin-right: 0em;
+    }
+    #logo h2 {
+        font-size: 3.5em;
+        margin-left: 1.7em;
+    }
+    #logo h2 span {
+        margin-right: 0em;
+    }
+    #logo h3 {
+        font-size: 1.2em;
+        margin-left: 6em;
+        margin-bottom: .75em;
+    }
+    .card i {
+        font-size: 2.25em;
+    }
+    #redesSociales div {
+        display: none;
+    }
+    .btns .container {
+        width: 100%;
+        font-size: .9em;
+        margin-left: 7em;
+        padding: .5em;
+    }
+    .btn {
+        margin-bottom: .5em;
+    }
+    header #top {
+        font-size: .6em;
+    }
+    #logoFirma {
+        width: 80px;
+        height: 80px;
+    }
+    nav .container div:first-of-type {
+        display: inline;
+        width: 50%;
+    }
+    h5 {
+        margin-top: 1em;
+    }
+    #burstAleatoria p, #blog {
+        font-size: .8em;
+    }
+    .card i {
+        font-size: 4.5em;
+    }
+    #botones {
+        display: flex;
+    }
+} 
+
+
+
